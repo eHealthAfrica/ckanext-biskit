@@ -13,6 +13,7 @@ install:
     - pip install coveralls
 script:
     - sh bin/travis-run.sh
+    - flake8 --count ./ckanext/biskit
     - pycodestyle --count ./ckanext/biskit
 after_success:
     - coveralls
