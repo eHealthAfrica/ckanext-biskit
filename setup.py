@@ -21,7 +21,7 @@ setup(
     long_description=long_description,
 
     # The project's main homepage.
-    url='https://github.com//ckanext-biskit',
+    url='https://github.com/eHealthAfrica/ckanext-biskit',
 
     # Author details
     author='''Abdul-Hakeem Shaibu''',
