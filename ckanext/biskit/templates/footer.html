@@ -1,0 +1,49 @@
+<footer class="site-footer">
+    <div class="container-fluid">
+        {% block footer_content %}
+        <div class="row">
+          <div class="col-md-10 col-md-offset-1">
+            <div class="footer-content">
+              <div class="footer-links">
+                <div>
+                <img src="/img/logo.png" class="left-logo" alt="eHA logo">
+                  <ul class="list-unstyled">
+                    <li>
+                        <a href="#">{{ _('Contact')}}</a>
+                    </li>
+                    <li>
+                        <a href="#">{{ _('Privacy Policy')}}</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="footer-partner">
+                  <h3 class="footer-title">Part of eHealth Africa</h3>
+                  <img src="/img/eha.png" class="global-logo" alt="eHA logo">
+              </div>
+            </div>
+          </div>
+        </div>
+        {% endblock %}
+    </div>
+    <div class="container-fluid">
+        <div class="footer-disclaimer">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <p>&copy; {{ _('2020 eHealth Africa') }}</p>
+              <p>{{ _('All rights reserved except published datasets/resources and metadata.') }}</p>
+              <p>{{ _('All datasets/resources including metadata https://biskit-dev.eha.im/ are licensed under eHA') }}</p>
+            </div>
+
+          </div>
+        </div>
+        <!-- <div class="col-md-4 footer-social-icons">
+            <a href="#" class="fa fa-social fa-facebook"></a>
+            <a href="#" class="fa fa-social fa-twitter"></a>
+            <a href="#" class="fa fa-social fa-google-plus"></a>
+            <a href="#" class="fa fa-social fa-instagram"></a>
+            <a href="#" class="fa fa-social fa-pinterest"></a>
+        </div> -->
+    </div>
+    <!-- {% block footer_debug %} {% if g.debug %} {% include 'snippets/debug.html' %} {% endif %} {% endblock %} -->
+</footer>
