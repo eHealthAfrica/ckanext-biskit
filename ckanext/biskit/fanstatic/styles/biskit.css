@@ -60,8 +60,8 @@
   src: local('Open Sans Bold'), local('OpenSans-Bold'), url(https://fonts.gstatic.com/s/opensans/v18/mem5YaGs126MiZpBA-UN7rgOUuhs.ttf) format('truetype');
 }
 .site-footer {
-  border-top: 7px solid #c144317e;
-  background: #983627;
+  border-top: 7px solid #2222227e;
+  background: #222222;
   font-family: 'Open Sans', sans-serif;
 }
 @media (max-width: 767px) {
@@ -229,7 +229,7 @@
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 0.02em;
-  color: #983627;
+  color: #222222;
 }
 .badge {
   font-size: 0.9rem;
@@ -239,7 +239,7 @@
   height: 1.5em;
   padding: 0.2em;
   text-align: center;
-  background: #c1443136;
+  background: #22222236;
   text-shadow: none;
   transition: box-shadow 0.2s;
 }
@@ -474,23 +474,23 @@ body {
   overflow-x: hidden;
 }
 .hero {
-  background: #983627;
+  background: #CB200C;
   background-image: url(/img/bg.png);
 }
 .navbar {
   margin-bottom: 0;
 }
 .account-masthead {
-  background-color: #983627;
-  background: #983627;
+  background-color: #CB200C;
+  background: #CB200C;
 }
 .masthead {
-  background-color: #C14531;
-  background: #C14531;
+  background-color: #222222;
+  background: #222222;
 }
 .masthead .logo img {
   width: 120px !important;
-  margin-top: 16px;
+  margin-top: 6px;
 }
 .account-masthead .account ul li {
   color: white;
@@ -501,7 +501,7 @@ body {
 }
 .account-masthead .account ul li a:hover {
   color: white;
-  background-color: #C14531;
+  background-color: #222222;
 }
 .nav-pills > li > a {
   border-radius: 0px;
@@ -532,14 +532,14 @@ body {
   color: white;
 }
 .tag {
-  background: #983627;
+  background: #CB200C;
   color: white;
   margin: 0 10px;
   border: none;
   box-shadow: none;
 }
 .tag:hover {
-  background-color: #C14531 !important;
+  background-color: #222222 !important;
   border: none !important;
   box-shadow: none !important;
 }
@@ -566,7 +566,7 @@ body {
   margin: 0 auto;
 }
 .search-form .search-input.search-giant input {
-  background: #983627b7;
+  background: #CB200Cb7;
   border: none;
   color: white;
   padding-top: 20px;
@@ -579,7 +579,7 @@ body {
   border: 1px solid white !important;
 }
 .title {
-  color: #983627;
+  color: #CB200C;
   text-align: center;
   width: 60%;
   margin: 0 auto;
@@ -588,11 +588,11 @@ body {
   color: #222;
 }
 .top-rule {
-  border-top: 3px solid #983627;
+  border-top: 3px solid #CB200C;
   width: 10%;
 }
 .top-rule-div {
-  border-top: 2px solid #983627;
+  border-top: 2px solid #CB200C;
   width: 40px;
   margin: 20px 0px;
 }
@@ -620,19 +620,19 @@ body {
   margin: 20px auto;
 }
 .card h4 {
-  color: #983627;
+  color: #CB200C;
   padding: 10px;
 }
 .card.dark {
   color: white !important;
-  background: #983627;
+  background: #CB200C;
   border: none;
 }
 .card.dark h4 {
   color: white;
 }
 .sec {
-  background: #98362711;
+  background: #CB200C11;
   margin: 30px 0px;
   padding: 30px 0px;
 }
@@ -649,11 +649,11 @@ body {
 }
 .card-2 h4 {
   margin-top: 20px;
-  color: #983627;
+  color: #CB200C;
   font-weight: bold;
 }
 .card-2 .card-2-con {
-  background: #98362711;
+  background: #CB200C11;
   display: flex;
   padding: 20px;
   justify-content: center;
@@ -678,11 +678,11 @@ body {
   border: none;
   border-radius: none;
   padding: 10px 20px;
-  background-color: #983627;
+  background-color: #CB200C;
   color: white;
 }
 .side-rule {
-  border-top: 1px solid #983627;
+  border-top: 1px solid #CB200C;
   width: 30%;
 }
 .pat-img {
@@ -695,7 +695,7 @@ body {
   align-items: center;
 }
 .top-desc {
-  background: #310d08b7;
+  background: #CB200C;
   min-height: 400px;
   display: flex;
   align-items: center;
@@ -726,18 +726,23 @@ body {
   width: 100px;
 }
 .btn-primary {
-  background-color: #983627;
+  background-color: #CB200C;
   border: none;
 }
 .btn-primary:hover {
-  background-color: #C14531;
+  background-color: #222222;
 }
 .btn-primary:focus {
-  background-color: #C14531;
+  background-color: #222222;
+}
+.about-bis-contain {
+  margin: 0 auto;
+  float: none;
+  line-height: 30px;
 }
 @media (max-width: 768px) {
   .hero {
-    background: #983627;
+    background: #CB200C;
     background-image: url(/bg.png);
   }
   .hero-title {
