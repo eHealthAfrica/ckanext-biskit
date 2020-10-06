@@ -1,10 +1,11 @@
 {
   "name": "ckanext-biskit",
   "private": true,
+  "dependencies": {},
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-less": "^4.0.1",
-    "gulp-watch": "^5.0.1"
-  },
-  "dependencies": {}
+    "gulp-watch": "^5.0.1",
+    "yargs-parser": "^13.1.2"
+  }
 }
