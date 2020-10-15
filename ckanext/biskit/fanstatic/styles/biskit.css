@@ -481,8 +481,7 @@ body {
   margin-bottom: 0;
 }
 .account-masthead {
-  background-color: #CB200C;
-  background: #CB200C;
+  background: #383838;
 }
 .masthead {
   background-color: #222222;
@@ -582,7 +581,7 @@ body {
   color: #CB200C;
   text-align: center;
   width: 60%;
-  margin: 0 auto;
+  margin: 40px auto;
 }
 .title p {
   color: #222;
@@ -602,7 +601,7 @@ body {
   margin: 20px 0px;
 }
 .row2 {
-  margin: 0 auto !important;
+  margin: 40px auto !important;
 }
 .card {
   border: 1px solid #d6d6d6;
@@ -618,18 +617,29 @@ body {
   width: 80%;
   min-width: 300px;
   margin: 20px auto;
+  position: relative;
+}
+.card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 100%;
+  bottom: 0;
+  left: 0;
+  background-color: #CB200C11;
+  transition: right 250ms;
+}
+.card:hover::after {
+  right: 0;
 }
 .card h4 {
   color: #CB200C;
   padding: 10px;
 }
-.card.dark {
-  color: white !important;
-  background: #CB200C;
-  border: none;
-}
-.card.dark h4 {
-  color: white;
+.card h4,
+.card img,
+.card p {
+  z-index: 1;
 }
 .sec {
   background: #CB200C11;
@@ -646,6 +656,12 @@ body {
   flex-direction: row;
   padding: 10px;
   margin: 20px auto;
+  transition: all 0.3s;
+}
+.card-2:hover {
+  -webkit-box-shadow: 0px 6px 12px rgba(152, 54, 39, 0.3);
+  -moz-box-shadow: 0px 6px 12px rgba(152, 54, 39, 0.3);
+  box-shadow: 0px 6px 12px rgba(152, 54, 39, 0.3);
 }
 .card-2 h4 {
   margin-top: 20px;
@@ -661,6 +677,10 @@ body {
   align-self: center;
   border-radius: 5px;
   margin-right: 20px;
+  transition: all 0.3s;
+}
+.card-2 .card-2-con:hover {
+  background: #cb1f0c1b;
 }
 .card-2 .card-2-img {
   width: 40px;
@@ -680,10 +700,17 @@ body {
   padding: 10px 20px;
   background-color: #CB200C;
   color: white;
+  transition: all 0.3s;
+}
+.show-all button:hover {
+  background-color: #b11b0b;
 }
 .side-rule {
   border-top: 1px solid #CB200C;
   width: 30%;
+}
+.partners {
+  margin: 50px auto;
 }
 .pat-img {
   margin: 20px auto;
@@ -693,6 +720,14 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
+}
+.pat-img-con img {
+  transition: all 0.2s;
+  filter: grayscale(100%);
+}
+.pat-img-con img:hover {
+  filter: grayscale(0%);
+  transform: scale(1.1);
 }
 .top-desc {
   background: #CB200C;
@@ -749,6 +784,7 @@ body {
     font-size: 1.5em;
     padding-top: 150px;
     width: 90%;
+    margin: 10px auto;
   }
   .search-container {
     padding-bottom: 200px;
