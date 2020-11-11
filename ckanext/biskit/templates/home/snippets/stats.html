@@ -1,0 +1,32 @@
+{% set stats = h.get_site_statistics() %}
+{% set top_nodes = h.group_tree_highlight(organizations, h.group_tree(type_='organization')) %}
+
+<div class="row row2">
+  <div class="col-md-4">
+    <div class="card-2">
+      <div class="card-2-con"><img class="card-2-img" src="/img/dataset1.png"></div>
+      <div>
+        <h4>{{ h.SI_number_span(stats.dataset_count) }}</h4>
+        <p>Number of Datasets</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card-2">
+      <div class="card-2-con"><img class="card-2-img" src="/img/org1.png"></div>
+      <div>
+        <h4>{{ top_nodes | length }}</h4>
+        <p>Number of Organizations</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card-2">
+      <div class="card-2-con"><img class="card-2-img" src="/img/group1.png"></div>
+      <div>
+        <h4>{{ h.SI_number_span(stats.group_count) }}</h4>
+        <p>Number of Groups</p>
+      </div>
+    </div>
+  </div>
+</div>
