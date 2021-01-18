@@ -708,16 +708,18 @@ body {
   justify-content: center;
   margin: 30px auto;
 }
-.show-all button {
+.show-all .show-all-button {
   border: none;
   border-radius: none;
   padding: 10px 20px;
   background-color: #CB200C;
   color: white;
   transition: all 0.3s;
+  text-decoration: none;
 }
-.show-all button:hover {
+.show-all .show-all-button:hover {
   background-color: #b11b0b;
+  text-decoration: none;
 }
 .side-rule {
   border-top: 1px solid #CB200C;
