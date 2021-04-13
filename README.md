@@ -37,6 +37,16 @@ To install ckanext-biskit:
     sudo service apache2 reload
     ```
 
+### Config Settings
+
+Optional:
+
+```ini
+# An optional setting to control whether to display the debug link in the footer
+# when running in debug mode
+ckanext.biskit.show_debug_link = true
+```
+
 ## Development
 
 ### Development Installation
