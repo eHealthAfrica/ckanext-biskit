@@ -45,5 +45,8 @@
             <a href="#" class="fa fa-social fa-pinterest"></a>
         </div> -->
     </div>
-    {% block footer_debug %} {% if g.debug %} {% include 'snippets/debug.html' %} {% endif %} {% endblock %}
+    {% block footer_debug %}
+      {% set show_link = h.asbool(config.get('ckanext.biskit.show_debug_link', 'true')) %}
+      {% if g.debug and show_link %} {% include 'snippets/debug.html' %} {% endif %}
+    {% endblock %}
 </footer>
