@@ -37,16 +37,19 @@
 
           </div>
         </div>
-        <!-- <div class="col-md-4 footer-social-icons">
+        <!--
+          <div class="col-md-4 footer-social-icons">
             <a href="#" class="fa fa-social fa-facebook"></a>
             <a href="#" class="fa fa-social fa-twitter"></a>
             <a href="#" class="fa fa-social fa-google-plus"></a>
             <a href="#" class="fa fa-social fa-instagram"></a>
             <a href="#" class="fa fa-social fa-pinterest"></a>
-        </div> -->
+          </div>
+        -->
     </div>
     {% block footer_debug %}
-      {% set show_link = h.asbool(config.get('ckanext.biskit.show_debug_link', 'true')) %}
-      {% if g.debug and show_link %} {% include 'snippets/debug.html' %} {% endif %}
+      {% if g.debug and h.biskit_show_debug_link() %}
+        {% include 'snippets/debug.html' %}
+      {% endif %}
     {% endblock %}
 </footer>
